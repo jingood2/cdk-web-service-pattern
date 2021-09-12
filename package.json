@@ -1,5 +1,9 @@
 {
   "name": "cdk-web-serivce-pattern",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jingood2/cdk-web-service-pattern"
+  },
   "scripts": {
     "clobber": "npx projen clobber",
     "bump": "npx projen bump",
@@ -10,7 +14,8 @@
     "build": "npx projen build",
     "test:watch": "npx projen test:watch",
     "test:update": "npx projen test:update",
-    "projen:upgrade": "npx projen projen:upgrade",
+    "upgrade-dependencies": "npx projen upgrade-dependencies",
+    "upgrade-projen": "npx projen upgrade-projen",
     "default": "npx projen default",
     "eslint": "npx projen eslint",
     "synth": "npx projen synth",
@@ -25,7 +30,7 @@
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
-    "aws-cdk": "^1.95.2",
+    "aws-cdk": "^1.121.0",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -33,15 +38,28 @@
     "jest": "^27.1.1",
     "jest-junit": "^12",
     "json-schema": "^0.3.0",
-    "projen": "^0.17.84",
+    "npm-check-updates": "^11",
+    "projen": "^0.17.95",
     "standard-version": "^9",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@aws-cdk/assert": "^1.95.2",
-    "@aws-cdk/core": "^1.95.2"
+    "@aws-cdk/assert": "^1.121.0",
+    "@aws-cdk/aws-certificatemanager": "^1.121.0",
+    "@aws-cdk/aws-ec2": "^1.121.0",
+    "@aws-cdk/aws-ecr": "^1.121.0",
+    "@aws-cdk/aws-ecs": "^1.121.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.121.0",
+    "@aws-cdk/aws-elasticloadbalancingv2": "^1.121.0",
+    "@aws-cdk/aws-iam": "^1.121.0",
+    "@aws-cdk/aws-logs": "^1.121.0",
+    "@aws-cdk/aws-rds": "^1.121.0",
+    "@aws-cdk/aws-route53": "^1.121.0",
+    "@aws-cdk/aws-secretsmanager": "^1.121.0",
+    "@aws-cdk/aws-servicediscovery": "^1.121.0",
+    "@aws-cdk/core": "^1.121.0"
   },
   "bundledDependencies": [],
   "license": "Apache-2.0",
