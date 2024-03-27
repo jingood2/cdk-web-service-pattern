@@ -4,10 +4,10 @@ import * as elbv2 from '@aws-cdk/aws-elasticloadbalancingv2';
 import * as servicediscovery from '@aws-cdk/aws-servicediscovery';
 import * as cdk from '@aws-cdk/core';
 //import { CloudMapNamespaceProvider, DatabaseProvider, ICloudMapNamespaceInfoProvider, IDatabaseInfoProvider, IPortPublisher, IVpcInfoProvider, PortPublisher, VpcProvider } from '../utils';
-import { CloudMapNamespaceProvider, ICloudMapNamespaceInfoProvider, IDatabaseInfoProvider, IPortPublisher, IVpcInfoProvider, PortPublisher, VpcProvider } from '../utils';
 import { ClusterProvider, IClusterInfoProvider } from './ecs-cluster-provider';
 import { EcsContainerExtensionProps } from './ecs-container-extension';
 import { EcsFargateTaskDefinition } from './ecs-task-definition';
+import { CloudMapNamespaceProvider, ICloudMapNamespaceInfoProvider, IDatabaseInfoProvider, IPortPublisher, IVpcInfoProvider, PortPublisher, VpcProvider } from '../utils';
 
 
 /**
