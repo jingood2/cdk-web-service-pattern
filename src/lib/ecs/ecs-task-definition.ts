@@ -2,13 +2,13 @@ import * as ecs from '@aws-cdk/aws-ecs';
 import * as elbv2 from '@aws-cdk/aws-elasticloadbalancingv2';
 import * as servicediscovery from '@aws-cdk/aws-servicediscovery';
 import * as cdk from '@aws-cdk/core';
-import { DatabaseVendor } from '../utils';
 import {
   EcsContainerExtension,
   EcsContainerExtensionProps,
 } from './ecs-container-extension';
 import { EnsureMysqlDatabaseExtension } from './ensure-mysql-database-extension';
 import { EnsurePostgresqlDatabaseExtension } from './ensure-postgresql-database-extension';
+import { DatabaseVendor } from '../utils';
 
 /**
  * A Ecs task definition.

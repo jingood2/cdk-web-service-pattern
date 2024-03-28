@@ -3,10 +3,10 @@ import * as ecs from '@aws-cdk/aws-ecs';
 import * as elbv2 from '@aws-cdk/aws-elasticloadbalancingv2';
 import * as servicediscovery from '@aws-cdk/aws-servicediscovery';
 import * as cdk from '@aws-cdk/core';
-import { CloudMapNamespaceProvider, DatabaseProvider, ICloudMapNamespaceInfoProvider, IDatabaseInfoProvider, IPortPublisher, IVpcInfoProvider, PortPublisher, VpcProvider } from '../utils';
 import { ClusterProvider, IClusterInfoProvider } from './ecs-cluster-provider';
 import { KeycloakContainerExtensionProps } from './keycloak-container-extension';
 import { KeycloakFargateTaskDefinition } from './keycloak-task-definition';
+import { CloudMapNamespaceProvider, DatabaseProvider, ICloudMapNamespaceInfoProvider, IDatabaseInfoProvider, IPortPublisher, IVpcInfoProvider, PortPublisher, VpcProvider } from '../utils';
 
 /**
  * Props for `KeycloakCluster`
